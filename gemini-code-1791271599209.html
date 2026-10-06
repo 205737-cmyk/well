@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindScape | Garden International School Well-being Hub</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Supabase JS Client CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <style>
+    .glass {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .mindscape-gradient {
+      background: linear-gradient(135deg, #14b8a6 0%, #6366f1 50%, #8b5cf6 100%);
+    }
+    .pulse-glow {
+      box-shadow: 0 0 30px -5px rgba(20, 184, 166, 0.35);
+    }
+    .glow-violet:hover {
+      box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.35);
+    }
+    .mood-btn {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .mood-btn:hover {
+      transform: translateY(-4px) scale(1.03);
+      border-color: #2dd4bf !important;
+      background: rgba(45, 212, 191, 0.1) !important;
+      box-shadow: 0 0 20px rgba(45, 212, 191, 0.3);
+    }
+    .mood-btn.selected {
+      border-color: #14b8a6 !important;
+      background-color: rgba(20, 184, 166, 0.25) !important;
+      box-shadow: 0 0 20px rgba(20, 184, 166, 0.4);
+    }
+    .dashboard-grid {
+      display: grid;
